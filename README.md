@@ -5,8 +5,8 @@ Convert xml output by 'SMS Backup & Restore' to single *.xlsx, including images 
 
 ```bash
 # Clone the repo
-git clone ?
-cd ?
+git clone https://github.com/prettydeep/sms-log-convert.git
+cd sms-log-convert/
 
 # Install openpyxl
 pip install openpyxl
