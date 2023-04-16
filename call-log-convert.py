@@ -24,6 +24,7 @@ call_type_mapping = {
     "1": "Incoming",
     "2": "Outgoing",
     "3": "Missed",
+    "4": "Voicemail",
     "5": "Declined",
     "6": "Rejected/Spam"
 }
