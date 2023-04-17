@@ -1,5 +1,5 @@
 # sms-log-convert
-Convert xml output by 'SMS Backup & Restore' to single *.xlsx, including images if available.
+Convert *.xml output by 'SMS Backup & Restore' to single *.xlsx, including images if available.
 
 ## Install
 
