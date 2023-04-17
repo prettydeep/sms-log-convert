@@ -3,6 +3,8 @@ Convert xml output by 'SMS Backup & Restore' to single *.xlsx, including images 
 
 ## Install
 
+*only tested with Python 3.8
+
 ```bash
 # Clone the repo
 git clone https://github.com/prettydeep/sms-log-convert.git
