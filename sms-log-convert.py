@@ -57,12 +57,15 @@ for elem in root:
         if elem.tag == 'mms':
             image_elems = [e for e in elem.findall(".//part") if e.attrib['ct'].startswith('image/')]
             if image_elems:
-                image_elem = image_elems[0]
-                image_data = image_elem.attrib['data']
-                temp_image_file = process_image_data(image_data)
-                img = Image(temp_image_file)
-                sheet.column_dimensions['G'].width = img.width // 6
-                sheet.row_dimensions[current_row].height = img.height
-                sheet.add_image(img, f'G{current_row}')
+                try:
+                    image_elem = image_elems[0]
+                    image_data = image_elem.attrib['data']
+                    temp_image_file = process_image_data(image_data)
+                    img = Image(temp_image_file)
+                    sheet.column_dimensions['G'].width = img.width // 6
+                    sheet.row_dimensions[current_row].height = img.height
+                    sheet.add_image(img, f'G{current_row}')
+                except:
+                    print(f'file {temp_image_file} is not a valid image file ')
 
 workbook.save(output_file)
